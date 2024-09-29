@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <h1>Formulário de Cadastro</h1>
+
+        <!-- Grupo de informações pessoais -->
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required />
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required />
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Crie uma senha" minlength="8" required />
+            </p>
+
+            <p>
+                <label for="data-nascimento">Data de nascimento:</label>
+                <input type="date" name="data-nascimento" id="data-nascimento" required />
+            </p>
+        </fieldset>
+
+        <!-- Interesses -->
+        <fieldset>
+            <legend>Interesses</legend>
+
+            <p>
+                <label for="interesse">Selecione seus interesses:</label><br>
+                <input type="checkbox" name="interesse" id="front-end" value="front-end" />
+                <label for="front-end">Front End</label><br>
+
+                <input type="checkbox" name="interesse" id="back-end" value="back-end" />
+                <label for="back-end">Back End</label>
+            </p>
+        </fieldset>
+
+        <!-- Gênero -->
+        <fieldset>
+            <legend>Gênero</legend>
+
+            <p>
+                <input type="radio" name="genero" id="feminino" value="feminino" required />
+                <label for="feminino">Feminino</label><br>
+
+                <input type="radio" name="genero" id="masculino" value="masculino" />
+                <label for="masculino">Masculino</label><br>
+
+                <input type="radio" name="genero" id="outro" value="outro" />
+                <label for="outro">Outro</label>
+            </p>
+        </fieldset>
+
+        <!-- Cidade -->
+        <p>
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade" required>
+                <option value="" disabled selected>Selecione sua cidade</option>
+                <option value="maceio">Maceió</option>
+                <option value="penedo">Penedo</option>
+                <option value="rio-largo">Rio Largo</option>
+                <option value="outra">Outra</option>
+            </select>
+        </p>
+
+        <!-- Quantidade de produtos -->
+        <p>
+            <label for="qnt_produtos">Quantidade de produtos:</label>
+            <input type="number" name="qnt_produtos" id="qnt_produtos" placeholder="Digite a quantidade de produtos" />
+        </p>
+
+        <!-- Informações adicionais -->
+        <p>
+            <label for="info-adicionais">Informações adicionais:</label>
+            <textarea name="info-adicionais" id="info-adicionais"
+                placeholder="Escreva informações adicionais aqui..."></textarea>
+        </p>
+
+        <!-- Botões de ação -->
+        <p>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+
+</html>

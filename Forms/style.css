@@ -1,0 +1,12 @@
+html {
+  font-family: sans-serif;
+}
+
+
+/* 
+Block faz com que quebre linha a cada elemento, deixando o label em cima e o input embaixo neste caso
+label {
+  display: block;
+}
+*/
+
